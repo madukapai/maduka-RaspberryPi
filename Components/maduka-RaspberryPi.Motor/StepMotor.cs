@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Windows.Devices.Gpio;
-using static maduka_RaspberryPi.Motor.Enums;
-using static maduka_RaspberryPi.Motor.Consts;
 
 namespace maduka_RaspberryPi.Motor
 {
+    using Windows.Devices.Gpio;
+    using static maduka_RaspberryPi.Motor.Enums;
+    using static maduka_RaspberryPi.Motor.Consts;
+
     public class StepMotor
     {
         public int? Sleep { get; set; }
@@ -34,7 +35,7 @@ namespace maduka_RaspberryPi.Motor
         public async Task TurnAsync(int degree, TurnDirection direction, DrivingMethod drivingMethod = DrivingMethod.FullStep)
         {
             if (this.Sleep == null)
-                this.Sleep = 5;
+                this.Sleep = 15;
 
             var steps = 0;
             GpioPinValue[][] methodSequence;

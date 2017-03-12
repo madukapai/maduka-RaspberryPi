@@ -8,6 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <TextBlock x:Name="txtStepMotor" HorizontalAlignment="Left" Margin="3,96,0,0" TextWrapping="Wrap" Text="StepMotor" VerticalAlignment="Top"/>
+        <Button x:Name="btnReverseStep" Content="Reverse" HorizontalAlignment="Left" Margin="136,94,0,0" VerticalAlignment="Top" Click="btnReverseStep_Click"/>
+        <Button x:Name="btnFowardStep" Content="Foward" HorizontalAlignment="Left" Margin="281,94,0,0" VerticalAlignment="Top" Click="btnFowardStep_Click"/>
+        <Button x:Name="btnStopStep" Content="Stop" HorizontalAlignment="Left" Margin="210,131,0,0" VerticalAlignment="Top" Width="64" Click="btnStopStep_Click"/>
+        <TextBox x:Name="txtAngleStep" HorizontalAlignment="Left" Margin="210,94,0,0" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="66"/>
     </Grid>
 </Page>
