@@ -5,13 +5,25 @@
     xmlns:local="using:maduka_RaspberryPi.App"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="txtServoMotor" HorizontalAlignment="Left" Margin="3,16,0,0" TextWrapping="Wrap" Text="ServoMotor" VerticalAlignment="Top"/>
+        <Button x:Name="btnReverse" Content="Reverse" HorizontalAlignment="Left" Margin="136,10,0,0" VerticalAlignment="Top" Click="btnReverse_Click"/>
+        <TextBox x:Name="txtAngle" HorizontalAlignment="Left" Margin="212,10,0,0" TextWrapping="Wrap" Text="90" VerticalAlignment="Top"/>
+        <Button x:Name="btnFoward" Content="Foward" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Click="btnFoward_Click"/>
+        <Button x:Name="btnStop" Content="Reset" HorizontalAlignment="Left" Margin="212,47,0,0" VerticalAlignment="Top" Click="btnStop_Click" Width="64"/>
+
         <TextBlock x:Name="txtStepMotor" HorizontalAlignment="Left" Margin="3,96,0,0" TextWrapping="Wrap" Text="StepMotor" VerticalAlignment="Top"/>
         <Button x:Name="btnReverseStep" Content="Reverse" HorizontalAlignment="Left" Margin="136,94,0,0" VerticalAlignment="Top" Click="btnReverseStep_Click"/>
         <Button x:Name="btnFowardStep" Content="Foward" HorizontalAlignment="Left" Margin="281,94,0,0" VerticalAlignment="Top" Click="btnFowardStep_Click"/>
         <Button x:Name="btnStopStep" Content="Stop" HorizontalAlignment="Left" Margin="210,131,0,0" VerticalAlignment="Top" Width="64" Click="btnStopStep_Click"/>
         <TextBox x:Name="txtAngleStep" HorizontalAlignment="Left" Margin="210,94,0,0" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="66"/>
+
+        <TextBlock x:Name="txtServoMotorAngle" HorizontalAlignment="Left" Margin="3,200,0,0" TextWrapping="Wrap" Text="ServoMotorAngle" VerticalAlignment="Top"/>
+        <Button x:Name="btnReverseAngle" Content="0" HorizontalAlignment="Left" Margin="136,200,0,0" VerticalAlignment="Top" Click="btn0Angle_Click"/>
+        <Button x:Name="btnFowardAngle" Content="90" HorizontalAlignment="Left" Margin="212,200,0,0" VerticalAlignment="Top" Click="btn90Angle_Click"/>
+        <Button x:Name="btnStopAngle" Content="180" HorizontalAlignment="Left" Margin="282,200,0,0" VerticalAlignment="Top" Click="btn180Angle_Click"/>
     </Grid>
 </Page>

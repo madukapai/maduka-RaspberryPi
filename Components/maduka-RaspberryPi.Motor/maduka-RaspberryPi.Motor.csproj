@@ -110,6 +110,7 @@
     <Compile Include="Consts.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="ServoMotor.cs" />
+    <Compile Include="ServoMotorAngle.cs" />
     <Compile Include="StepMotor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\maduka_RaspberryPi.Motor.rd.xml" />
